@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Admin Login</h1>
+    <form onsubmit="login(event)">
+        <label>Username: <input type="text" id="username"></label><br>
+        <label>Password: <input type="password" id="password"></label><br>
+        <button type="submit">Login</button>
+    </form>
+    <script>
+        function login(event) {
+            event.preventDefault();
+            const u = document.getElementById('username').value;
+            const p = document.getElementById('password').value;
+            if (u === 'admin' && p === 'ship2025') {
+                window.location.href = 'admin_dashboard.html';
+            } else {
+                alert('Invalid credentials');
+            }
+        }
+    </script>
+</body>
+</html>
