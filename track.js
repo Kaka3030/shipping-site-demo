@@ -17,6 +17,9 @@ function generateTracking() {
     tracking += chars.charAt(Math.floor(Math.random() * chars.length));
   }
 
+  // Show the generated tracking number
   document.getElementById("trackingDisplay").innerText = tracking;
-  document.getElementById("trackCode").value = tracking; // optional: auto-fill
+
+  // Automatically put it in the input field so user can track it
+  document.getElementById("trackCode").value = tracking;
 }
