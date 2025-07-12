@@ -2,15 +2,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>ShipTrack Pro</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>ShipTrack Pro</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to ShipTrack Pro</h1>
-    <p>Generate a tracking number or <a href="track.html">track your package</a>.</p>
-    <button onclick="generateTracking()">Generate Tracking Number</button>
-    <p id="trackingDisplay"></p>
-    <script src="track.js"></script>
+  <h1>Welcome to ShipTrack Pro</h1>
+
+  <!-- Button to generate tracking number -->
+  <button onclick="generateTracking()">Generate Tracking Number</button>
+  <p id="trackingDisplay"></p>
+
+  <!-- Input field to enter or paste tracking number -->
+  <input type="text" id="trackCode" placeholder="Enter Tracking Number">
+  <button onclick="track()">Track</button>
+
+  <!-- Status message will show here -->
+  <p id="status"></p>
+
+  <script src="track.js"></script>
 </body>
 </html>
