@@ -11,15 +11,15 @@ function track() {
 }
 
 function generateTracking() {
-  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-  let tracking = "SHIP";
-  for (let i = 0; i < 10; i++) {
-    tracking += chars.charAt(Math.floor(Math.random() * chars.length));
-  }
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    let tracking = "SHIP";
+    for (let i = 0; i < 10; i++) {
+        tracking += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
 
-  // Show the generated tracking number
-  document.getElementById("trackingDisplay").innerText = tracking;
+    // Display tracking code
+    document.getElementById("trackingDisplay").innerText = tracking;
 
-  // Automatically put it in the input field so user can track it
-  document.getElementById("trackCode").value = tracking;
+    // Automatically put it into the input box
+    document.getElementById("trackCode").value = tracking;
 }
